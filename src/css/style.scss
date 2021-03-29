@@ -91,99 +91,96 @@ h6 {
 
 /*USER CARD*/
 
-* {
+*{
   margin: 0;
   padding: 0;
 }
 
-.userCard {
+
+.userCard{
   margin: 40px 0 40px 0;
+  
+  &__wrapper{
+      max-width: 1000px;
+      margin: 0 auto;
+  }
+
+  &__items{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap; 
+  }
+
+  &__item{
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 300px;
+      border: 2px solid #CACACA;
+      border-radius: 16px;
+      position: relative;
+      padding: 15px 45px 15px 45px;
+      margin-top: 50px;
+      overflow: hidden;
+      transition: .3s all;
+      &:hover{
+          box-shadow: 0 0 15px rgba(0,0,0, .2);
+          border-color: #fff;
+      }
+  }
+  &__edit{
+      width: 17px;
+      height: 17px;
+      cursor: pointer;
+      opacity: .5;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      transition: .3s all;
+      &:hover{
+          opacity: 1;
+          transform: scale(1.1);
+      }
+  }
+  &__photoDev{
+      width: 165px;
+      height: 165px;
+      background-color: #ccc;
+      border-radius: 50%;
+      overflow: hidden;
+  }
+  &__photoDev img{
+      width: 100%;
+  }
+  &__name{
+      font-size: 24px;
+      color: #747474;
+      margin: 15px 0 20px 0;
+  }
+  &__line{
+      width: 100%;
+      height: 1px;
+      background-color: #E3E1E1;
+  }
+  &__title{
+      font-size: 18px;
+      color: #747474;
+      margin: 25px 0 20px 0;
+  }
+  &__info{
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      line-height: 24px;
+  }
 }
 
-.userCard__wrapper {
-  max-width: 1000px;
-  margin: 0 auto;
-}
 
-.userCard__items {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+/*USER CARD*/
 
-.userCard__item {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 300px;
-  border: 2px solid #cacaca;
-  border-radius: 16px;
-  position: relative;
-  padding: 15px 45px 15px 45px;
-  margin-top: 50px;
-  transition: 0.3s all;
-}
-
-.userCard__item:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-  border-color: #fff;
-}
-
-.userCard__edit {
-  width: 17px;
-  height: 17px;
-  cursor: pointer;
-  opacity: 0.5;
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  transition: 0.3s all;
-}
-
-.userCard__edit:hover {
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-.userCard__photoDev {
-  width: 165px;
-  height: 165px;
-  background-color: #ccc;
-  border-radius: 50%;
-  overflow: hidden;
-}
-
-.userCard__photoDev img {
-  width: 100%;
-}
-
-.userCard__name {
-  font-size: 24px;
-  color: #747474;
-  margin: 15px 0 20px 0;
-}
-
-.userCard__line {
-  width: 100%;
-  height: 1px;
-  background-color: #e3e1e1;
-}
-
-.userCard__title {
-  font-size: 18px;
-  color: #747474;
-  margin: 25px 0 20px 0;
-}
-
-.userCard__info {
-  width: 200px;
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  line-height: 24px;
-}
 footer {
   background: #8da1f8;
 }
