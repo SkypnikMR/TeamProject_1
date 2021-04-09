@@ -85,20 +85,20 @@ function createAndFillQuestionItem($node, serverData, i) {
   </div>
     <div class = "question__text">
       <div class="questions__answer">
-        <div class="questions__textInfo">
-          <p><b>Текст вопроса:</b> </p><p class="questions__resultText" title = "${serverData[i].questionText}">${serverData[i].questionText}</p>
+        <div class="questions__info">
+          <p><b>Текст вопроса:</b> </p><p class="questions__result" title = "${serverData[i].questionText}">${serverData[i].questionText}</p>
         </div>
         </div>
       </div>
       <div class = "questions__themeDateAns">
         <div class="questions__info">
-          <p><b>Тема вопроса:</b> </p><p class="questions__resultInfo">${serverData[i].theme}</p>
+          <p><b>Тема вопроса:</b> </p><p class="questions__result">${serverData[i].theme}</p>
         </div>  
         <div class="questions__info">
-          <p><b>Ответ на вопрос:</b> </p><p class="questions__resultInfo">${serverData[i].answer}</p>
+          <p><b>Ответ на вопрос:</b> </p><p class="questions__result">${serverData[i].answer}</p>
         </div>
         <div class="questions__info">
-          <p><b>Дата вопроса:</b> </p><p class="questions__resultInfo">${serverData[i].stringDate}</p>
+          <p><b>Дата вопроса:</b> </p><p class="questions__result">${serverData[i].stringDate}</p>
       </div>
     </div>
   </div>`;
@@ -109,20 +109,20 @@ function createAndFillQuestionItem($node, serverData, i) {
   </div>
     <div class = "question__text">
       <div class="questions__answer">
-        <div class="questions__textInfo">
-          <p><b>Текст вопроса:</b> </p><p class="questions__resultText" title = "${serverData[i].questionText}">${serverData[i].questionText}</p>
+        <div class="questions__info">
+          <p><b>Текст вопроса:</b> </p><p class="questions__result" title = "${serverData[i].questionText}">${serverData[i].questionText}</p>
         </div>
         </div>
       </div>
       <div class = "questions__themeDateAns">
         <div class="questions__info">
-          <p><b>Тема вопроса:</b> </p><p class="questions__resultInfo">${serverData[i].theme}</p>
+          <p><b>Тема вопроса:</b> </p><p class="questions__result">${serverData[i].theme}</p>
         </div>  
         <div class="questions__info">
-          <p><b>Ответ на вопрос:</b> </p><p class="questions__resultInfo">${serverData[i].answer}</p>
+          <p><b>Ответ на вопрос:</b> </p><p class="questions__result">${serverData[i].answer}</p>
         </div>
         <div class="questions__info">
-          <p><b>Дата вопроса:</b> </p><p class="questions__resultInfo">${serverData[i].stringDate}</p>
+          <p><b>Дата вопроса:</b> </p><p class="questions__result">${serverData[i].stringDate}</p>
       </div>
     </div>
   </div>`;

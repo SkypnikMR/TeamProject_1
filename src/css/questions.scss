@@ -292,7 +292,7 @@ button:hover {
       }
       .questions__item {
         width: 1000px;
-        min-height: fit-content;
+        min-height: 200px;
         box-sizing: border-box;
         display: block;
         border: 2px solid #cacaca;
@@ -326,37 +326,34 @@ button:hover {
           display: block;
         }
         .questions__themeDateAns{
-          margin-top: 15px;
           display: flex;
           justify-content: space-around;
         }
         .questions__answer {
           font-size: 24px;
         }
-        .questions__textInfo{
-          text-align: center;
-        }
         .questions__info {
-          font-size: 24px;
           padding: 10px;
           text-align: center;
-          width: 300px;
         }
-        .questions__resultText {
-          display: -webkit-box;
-          -webkit-line-clamp: 3;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          text-align: center;
+        .questions__result {
           color: black;
           font-size: 24px;
+          padding: 10px;
+          overflow: hidden;
+          word-wrap: break-word;
+          display: block;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          line-height: 1.3em;
+          height: 3.9em;
         }
       }
       .questions__item:hover {
-        box-shadow: 0 0 50px rgba(0, 0, 0, 1);
-        // border: 5px, solid, black;
-        // background-color:  rgba(27, 255, 225, 1);
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        border-color: #fff;
+        background-color:  rgba(27, 255, 225, 1);
+        color: white;
       }
     }
   }
